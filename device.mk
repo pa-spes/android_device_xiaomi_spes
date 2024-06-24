@@ -214,9 +214,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-# Dolby
-TARGET_EXCLUDES_AUDIOFX := true
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
