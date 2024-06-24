@@ -8,17 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from spes/spesn device
-$(call inherit-product, device/xiaomi/spes/device.mk)
-
-# Inherit some common LineageOS stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Additions
-$(call inherit-product-if-exists, vendor/gapps/common.mk)
-$(call inherit-product-if-exists, vendor/prebuilt-apps/config.mk)
+# Inherit from spes device
+$(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Product Specifics
+# Device identifier
 PRODUCT_NAME := lineage_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
@@ -27,12 +23,4 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm
-
-# Fingerprint
-BUILD_FINGERPRINT := "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.5.0.TGCINXM:user/release-keys"
+BUILD_FINGERPRINT := Redmi/spes/spes:13/TKQ1.221114.001/V14.0.5.0.TGCINXM:user/release-keys
