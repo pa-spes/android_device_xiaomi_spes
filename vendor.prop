@@ -124,6 +124,9 @@ ro.apk_verity.mode=2
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_backpressure=1
