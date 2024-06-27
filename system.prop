@@ -45,6 +45,9 @@ ro.hardware.fp.sideCap=true
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# GFX
+ro.config.avoid_gfx_accel=true
+
 # Iorapd
 ro.iorapd.enable=false
 iorapd.perfetto.enable=false
