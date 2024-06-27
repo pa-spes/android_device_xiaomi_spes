@@ -377,10 +377,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power-V1-ndk_platform.vendor
 
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/google/interfaces \
-    hardware/google/pixel
-
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -439,6 +435,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/xiaomi
 
 # SystemUI
