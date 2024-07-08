@@ -217,6 +217,7 @@ debug.stagefright.c2inputsurface=-1
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 vendor.media.target.version=3
+vendor.media.target_variant=_khaje
 vendor.sys.media.target.version=3
 
 # Perf
