@@ -69,6 +69,17 @@ persist.log.tag.wificond=S
 persist.log.tag.TrafficStats=S
 persist.log.tag.ContrastColorUtil=S
 
+# LMKD
+ro.config.low_ram=false
+ro.lmk.use_minfree_levels=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.swap_util_max=90
+ro.lmk.psi_complete_stall_ms=600
+ro.lmk.psi_partial_stall_ms=130
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.thrashing_limit=55
+ro.lmk.thrashing_limit_decay=37
+
 # Media
 media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_khaje.xml
