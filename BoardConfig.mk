@@ -204,7 +204,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch
-VENDOR_SECURITY_PATCH := 2024-02-01
+VENDOR_SECURITY_PATCH := 2024-06-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
