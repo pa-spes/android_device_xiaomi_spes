@@ -1,0 +1,23 @@
+From 73bd4eabab17432ecdaaebd6fd6d85c50fa3d5cf Mon Sep 17 00:00:00 2001
+From: Arian <arian.kulmer@web.de>
+Date: Wed, 28 Feb 2024 11:46:29 +0100
+Subject: [PATCH 3/3] ims: Explicitly set targetSdk to 33 to match stock
+
+Otherwise apktool builds it using 34...
+---
+ AndroidManifest.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/AndroidManifest.xml b/AndroidManifest.xml
+index 2bdb14e..ca2fe4b 100644
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -1,4 +1,5 @@
+ <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" coreApp="true" package="org.codeaurora.ims" platformBuildVersionCode="33" platformBuildVersionName="13">
++    <uses-sdk android:targetSdkVersion="33" />
+     <protected-broadcast android:name="org.codeaurora.VOIP_VOPS_SSAC_STATUS"/>
+     <protected-broadcast android:name="com.android.internal.intent.action.ACTION_FORBIDDEN_NO_SERVICE_AUTHORIZATION"/>
+     <protected-broadcast android:name="com.qti.phone.action.ACTION_DISABLE_C_IWLAN_NOTIFICATION"/>
+-- 
+2.46.0
+
