@@ -600,7 +600,6 @@ vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
-vendor/lib64/libdpps.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -1043,7 +1042,7 @@ vendor/lib64/libqti-iopd-client.so|c59f9a3d6598ec5b2693569e85aefe46501ed13b
 vendor/lib64/libqti-iopd.so|92cb8569f017bea1e54fec5ce198e6771ca63e57
 vendor/lib64/vendor.qti.hardware.iop@2.0.so|46137df8ff9251ec1c83c642ac5e74f8b5898113
 
-# Perf - QSPM - Moto SM6225
+# Perf-QSPM - Moto SM6225
 vendor/bin/vendor.qti.qspmhal@1.0-service|ac1c898683786dba373e76d63e31b62e138c1695
 vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc|bdc5cbedd1688807409c72262824ca9162b20239
 vendor/etc/seccomp_policy/qspm.policy|1644e78aa55edb2340e38072be542e4d016f3fc4
@@ -1102,13 +1101,6 @@ vendor/lib64/libqmi_common_so.so
 vendor/lib64/libqmi_csi.so
 vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
-
-# QSP
-vendor/bin/vendor.qti.qspmhal@1.0-service
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc
-vendor/etc/seccomp_policy/qspm.policy
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
-vendor/lib64/vendor.qti.qspmhal@1.0.so
 
 # RIL
 -system_ext/app/DeviceInfo/DeviceInfo.apk
@@ -1237,11 +1229,6 @@ vendor/lib64/hw/sensors.elliptic@2.0.so
 vendor/lib64/libnotifyaudiohal.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
@@ -1464,7 +1451,6 @@ vendor/etc/seccomp_policy/wifidisplayhalservice.policy
 vendor/etc/wfdconfig.xml
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libmmosal.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libwfdcodecv4l2_proprietary.so
