@@ -13,7 +13,6 @@ ro.bluetooth.wipower=false
 # Blur
 persist.sys.sf.disable_blurs=1
 persist.sysui.disableBlur=true
-ro.launcher.blur.appLaunch=0
 ro.sf.blurs_are_expensive=0
 ro.surface_flinger.supports_background_blur=0
 
@@ -22,6 +21,8 @@ persist.vendor.cne.feature=1
 
 # Camera
 camera.disable_zsl_mode=1
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.android.MGC
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.android.MGC
 
 # Charger
 persist.vendor.quick.charge=1
