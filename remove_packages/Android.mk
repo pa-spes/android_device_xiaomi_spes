@@ -6,22 +6,15 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
 	Browser2 \
-	Camera2 \
-	DeskClock \
-	Eleven \
+	DuckDuckGo \
 	EmergencyInfo \
 	FMRadio \
-	Gallery2 \
 	HTMLViewer \
-	Jelly \
-	Matlog \
-	MusicFX \
 	Nfc \
-	Recorder \
-	SetupWizard \
+	Seedvault \
+	SimpleGallery \
 	Stk \
-	Tag \
-	Updater
+	stats
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
