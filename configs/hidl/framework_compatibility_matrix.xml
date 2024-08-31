@@ -754,6 +754,13 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.graphics.composer3</name>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.graphics.allocator</name>
         <interface>
             <name>IAllocator</name>
@@ -765,6 +772,14 @@
         <interface>
             <name>IDumpstateDevice</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.memory.pasrmanager</name>
+        <version>1.0-1</version>
+        <interface>
+            <name>IPasrManager</name>
+            <instance>pasrhal</instance>
         </interface>
     </hal>
 </compatibility-matrix>
