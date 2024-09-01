@@ -84,16 +84,11 @@ void set_device_props(const string model, const string name, const string market
 
 // Main function to load vendor properties
 void vendor_load_properties() {
-    // Detect device and configure properties
-    if (GetProperty("ro.boot.hwname", "") == "spesn") { // Redmi Note 11 NFC
-        set_device_props("2201117TY", "spesn_global", "Redmi Note 11 NFC", "spesn_global");
-    } else { // Redmi Note 11
-        string region = GetProperty("ro.boot.hwc", "");
-        if (region == "India") { // Redmi Note 11 India
-            set_device_props("2201117TI", "spes_in", "Redmi Note 11", "spes_in_global");
-        } else { // Redmi Note 11 Global
-            set_device_props("2201117TG", "spes_global", "Redmi Note 11", "spes_global");
-        }
+    string region = GetProperty("ro.boot.hwc", "");
+    if (region == "India") { // Redmi Note 11 India
+        set_device_props("2201117TI", "spes_in", "Redmi Note 11", "spes_in_global");
+    } else { // Redmi Note 11 Global
+        set_device_props("2201117TG", "spes_global", "Redmi Note 11", "spes_global");
     }
 
     // Set hardware revision
