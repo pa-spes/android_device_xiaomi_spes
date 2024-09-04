@@ -205,6 +205,10 @@ vendor.display.use_smooth_motion=1
 vendor.gralloc.disable_ubwc=0
 vendor.gralloc.secure_preview_buffer_format=420_sp
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Incremental FS
 ro.incremental.enable=1
 
