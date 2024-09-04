@@ -139,17 +139,21 @@ ro.apk_verity.mode=2
 # FUSE
 persist.sys.fuse.passthrough.enable=true
 
+# Graphics (Phase Offset)
+debug.sf.early.app.duration=16600000
+debug.sf.early.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
+debug.sf.earlyGl.sf.duration=16600000
+debug.sf.late.app.duration=16600000
+debug.sf.late.sf.duration=10500000
+debug.sf.use_phase_offsets_as_durations=1
+
 # Graphics
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=1
-debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.enable_transaction_tracing=false
-debug.sf.high_fps_early_gl_phase_offset_ns=-5000000
-debug.sf.high_fps_early_phase_offset_ns=-5000000
-debug.sf.high_fps_late_app_phase_offset_ns=1000000
-debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
 debug.sf.latch_unsignaled=1
 debug.sf.layer_caching_active_layer_timeout_ms=1000
 debug.sf.predict_hwc_composition_strategy=0
