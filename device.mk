@@ -132,7 +132,8 @@ PRODUCT_PACKAGES += \
   android.hardware.bluetooth.a2dp@1.0-service
 
 # Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2400
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
@@ -154,9 +155,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
-PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3_8
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -227,9 +225,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    libloc_net_iface \
-    liblocdiagiface
+    android.hardware.gnss@2.1.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
@@ -290,6 +286,10 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_PACKAGES += \
@@ -360,6 +360,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
