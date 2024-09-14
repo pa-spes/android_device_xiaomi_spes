@@ -30,3 +30,6 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=false
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
